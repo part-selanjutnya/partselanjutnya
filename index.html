@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Membuka Shopee...</title>
+<noscript><meta http-equiv="refresh" content="0; url=https://s.shopee.co.id/8KrMbwXwM7"></noscript>
+<script>
+var DEFAULT = "https://s.shopee.co.id/8KrMbwXwM7";
+var LINKS = {
+  // kopi: "https://s.shopee.co.id/xxxx",
+};
+var LOG = "";
+
+var q = new URLSearchParams(location.search);
+var p = q.get("p") || "", v = q.get("v") || "";
+var url = LINKS[p] || DEFAULT;
+try { if (LOG) navigator.sendBeacon(LOG + "?p=" + encodeURIComponent(p) + "&v=" + encodeURIComponent(v)); } catch (e) {}
+location.replace(url);
+</script>
+</head>
+<body style="font-family:sans-serif;text-align:center;padding-top:50px">
+<p>Mengarahkan ke Shopee... <a href="https://s.shopee.co.id/8KrMbwXwM7">klik di sini</a> jika tidak berpindah.</p>
+</body>
+</html>
